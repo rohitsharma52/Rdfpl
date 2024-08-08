@@ -1,0 +1,332 @@
+
+<%- include('../front/common/header') %>
+<main class="wrapper">
+    <section class=" wptb-slider style13">
+        <div class="swiper-container wptb-swiper-slider-thirteen">    
+            <!-- swiper slides -->
+            <div class="swiper-wrapper">
+                <!-- Slide Item -->
+               <%  Banner_data.forEach(function(ban_data){    %>  
+                <div class="swiper-slide">
+                    <div class="wptb-slider--item">
+                        <div class="wptb-slider--image">
+                            
+                            <img src="<%=ban_data.image%>" alt="">
+                        </div>
+                    </div>
+                </div>
+                <%}) %>
+               
+            </div>
+        </div>
+
+        <!-- Bottom Pane -->
+        <div class="wptb-bottom-pane justify-content-center">
+
+            <!-- Swiper Navigation -->
+            <div class="wptb-swiper-navigation style1">                      
+                <div class="wptb-swiper-arrow swiper-button-prev"></div>
+                <div class="wptb-swiper-arrow swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    <!-- //////////////////////////////////////////////Company name with silder////////////////////////////////////////////////////////////////////                       -->
+  
+     <!-- ////////////////////////////////our brand ///////////////////////////////////////// -->
+     <section class="brand py-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="wptb-heading col-12">
+              <div class="wptb-item--inner">
+                <h1 class="bounce mb-0 wow animate__backInLeft">OUR BRANDS</h1>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <img src="/front/assets/png/Royal_Dryfruit_1955-Logo.png" class="wow animate__bounceInUp">
+            </div>
+            <div class="col-6 col-md-3">
+              <img src="/front/assets/png/4Health_Logo.png" class="wow animate__bounceInLeft">
+            </div>
+            <div class="col-6 col-md-3">
+              <img src="/front/assets/png/11Eleven_Logo.png" class="wow animate__bounceInDown">
+            </div>
+            <div class="col-6 col-md-3">
+              <img src="/front/assets/png/Goa_Kajuwalla_Logo_PNG.png" class="wow animate__bounceInRight">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+  
+    
+<!-- //////////////////////////////////////////////owner team with overlaping////////////////////////////////////////////////////////////////////                       -->
+<section class="  pt-0"id="owner">
+    <div class="container-fluid">
+        <div class="wptb-heading">
+            <div class="wptb-item--inner">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <h1 class="wptb-heading bounce wow animate__bounceInDown"> COMPANY MD</h1>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="wptb-image-single wow fadeInUp">
+                    <div class="wptb-item--inner">
+                        <div class="wptb-item--image position-relative">
+                            <img src="/front/assets/img/more/7.png" alt="img">
+                            
+                           
+                        </div>
+                    </div>
+        
+                    
+                </div>
+            </div>
+
+            <div class="col-md-6 ps-md-5 mt-4 mt-md-0">
+                <div class="wptb-about--text ps-md-5">
+                    <h3>About C.E.O</h3>
+                    <p class="wptb-about--text-one">Kimono photography Agency runs wide and deep. Across many markets, geographies & typologies, our team members</p>
+                    <p>The talent at kimono runs wide range of services. Across many markets, geographies & typologies, our team members are some of the finest people of  photographers in the industry wide and deep. From Across many markets, geographies & boundaries. Hire Kimono in your event.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+       
+<!-- //////////////////////////////////////////////our team////////////////////////////////////////////////////////////////////                       -->
+
+   
+ <!-- //////////////////////////////////////////////our best category////////////////////////////////////////////////////////////////////                       -->
+ <section class=" category_bg wptb-slider style15">
+  
+        
+            <h1 class="wptb-item--title bounce wow animate__bounceInDown text-center">BEST CATEGORY</h1>
+        
+    <div class="swiper-container wptb-swiper-slider-fifteen"id="gift-item">    
+        
+        <!-- swiper slides -->
+        <div class="swiper-wrapper">
+            <!-- Slide Item --> 
+            <% cate_data.forEach(function(c_data) { %> 
+            <div class="swiper-slide">
+                <div class="wptb-slider--item">
+                    <div class="">
+                        <img src="<%=c_data.image%>" alt="">
+                        <h4><a href="project-details.html"><%=c_data.name%></a></h4>
+
+                    </div>
+                    
+                </div>
+            </div>
+         <%}) %>
+        </div>
+    </div>
+
+   
+    
+</section>  
+ 
+<!-- //////////////////////////////////////////////What we offer////////////////////////////////////////////////////////////////////                       -->
+<section class=" offer_bg wptb-slider style15">
+    <div class="wptb-heading-two text-center">
+            <h1 class="wptb-item--title bounce wow animate__bounceInDown"> WHAT WE ARE <br> <span>OFFER</span> YOU</h1>
+    </div>
+
+    <div class="swiper-container wptb-swiper-slider-fifteen"id="gift-item">    
+        <!-- swiper slides -->
+        <div class="swiper-wrapper">
+            <!-- Slide Item --> 
+        <% gift_data.forEach(function(g_data){    %>     
+            <div class="swiper-slide">
+                <div class="wptb-slider--item">
+                    <div class="slider_image">
+                        <img src="<%=g_data.image%>" alt="">
+                    </div>
+                </div>
+            </div>
+         <%}) %>
+        </div>
+    </div>
+
+   
+    
+</section>  
+<!-- //////////////////////////////////////////////TESTIMONIAL////////////////////////////////////////////////////////////////////                       -->
+<section class=" test_bg wptb-testimonial-one bg-image ">
+    <div class="container"id="TESTIMONIAL">
+
+        <div class="row">
+            <div class="wptb-heading">
+                <div class="wptb-item--inner text-center">
+                    <h1 class="wptb-item--title bounce wow animate__bounceInDown">CLIENT  FEEDBACK</h1>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="swiper-container swiper-testimonial">    
+                    <!-- swiper slides -->
+                    <div class="swiper-wrapper">
+                        <% test_data.forEach(function(t_data){ %>           
+                          <div class="swiper-slide">
+                            <div class="wptb-testimonial1">
+                              <div class="wptb-item--inner">
+                                <div class="wptb-item--holder">
+                                  <div class="d-flex align-items-center justify-content-between mr-bottom-25">
+                                    <div class="wptb-item--meta-rating">
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                      <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <div class="wptb-item--icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="57" height="45" viewBox="0 0 57 45" fill="none">
+                                        <path d="M51.5137 38.5537C56.8209 32.7938 56.2866 25.3969 56.2697 25.3125V2.8125C56.2697 2.06658 55.9734 1.35121 55.4459 0.823763C54.9185 0.296317 54.2031 0 53.4572 0H36.5822C33.48 0 30.9572 2.52281 30.9572 5.625V25.3125C30.9572 26.0584 31.2535 26.7738 31.781 27.3012C32.3084 27.8287 33.0238 28.125 33.7697 28.125H42.4266C42.3671 29.5155 41.9517 30.8674 41.22 32.0513C39.7913 34.3041 37.0997 35.8425 33.2156 36.6188L30.9572 37.0688V45H33.7697C41.5969 45 47.5678 42.8316 51.5137 38.5537ZM20.5566 38.5537C25.8666 32.7938 25.3294 25.3969 25.3125 25.3125V2.8125C25.3125 2.06658 25.0162 1.35121 24.4887 0.823763C23.9613 0.296317 23.2459 0 22.5 0H5.625C2.52281 0 0 2.52281 0 5.625V25.3125C0 26.0584 0.296316 26.7738 0.823762 27.3012C1.35121 27.8287 2.06658 28.125 2.8125 28.125H11.4694C11.41 29.5155 10.9945 30.8674 10.2628 32.0513C8.83406 34.3041 6.1425 35.8425 2.25844 36.6188L0 37.0688V45H2.8125C10.6397 45 16.6106 42.8316 20.5566 38.5537Z" fill="#D70006"/>
+                                      </svg>
+                                    </div>
+                                  </div>
+                                  <p class="wptb-item--description"> “<%= t_data.Descripation %>”</p>
+                                  <div class="wptb-item--meta">
+                                    <div class="wptb-item--image">
+                                      <img src="<%= t_data.image %>" alt="img">
+                                    </div>
+                                    <div class=" wptb-item--meta-left">
+                                      <h4 class="wptb-item--title"><%= t_data.name %></h4>
+                                      <h6 class="wptb-item--designation"><%= t_data.place %></h6>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <% }) %>
+                      </div>
+                      
+
+                    <!-- Swiper Navigation -->
+                    <div class="wptb-swiper-navigation style1">                      
+                        <div class="wptb-swiper-arrow swiper-button-prev"></div>
+                        <div class="wptb-swiper-arrow swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //////////////////////////////////////////////OUR BLOG////////////////////////////////////////////////////////////////////                       -->
+<section class=" blog_bg wptb-slider style9">
+    <div style="padding-top: 4rem;">
+        <h1 class="wptb-item--title  wow animate__bounceInDown text-center">OUR BLOGS</h1>
+    </div>
+
+    <div class="swiper-container wptb-swiper-slider-nine" id="blog"> 
+        <!-- swiper slides -->
+        <div class="swiper-wrapper">
+            <!-- Slide Item -->
+            <% blog_data.forEach(function(b_data){        %>  
+            <div class="swiper-slide">
+                <div  class="wptb-slider--item">
+                    <div class="wptb-slider--inner">
+                        <img src="<%= b_data.image %>" >
+                        <div class="trans_bg wptb-heading">
+                            <h1 class="wptb-item--title mt-2"><%=b_data.heading%></h1>
+                    
+                            <h6 class="wptb-item--subtitle mt-2">BY <%=b_data.by_blog%></h6>
+                            <h6 class="wptb-item--subtitle mt-3 mb-4"><%= b_data.formattedDate%></h6>
+                            
+                        </div>
+                    </div>
+
+                    <a class="wptb-image-popup" href="<%= b_data.image %>" data-fancybox="gallery">
+                        <i class="bi bi-arrows-fullscreen"></i>
+                    </a>
+                </div>
+            </div>
+            <%})%>
+        </div>
+    </div>
+
+   
+
+   
+
+    <!-- Bottom Pane -->
+    <div class="wptb-bottom-pane justify-content-center">
+        <!-- pagination dots -->
+        <div class="wptb-swiper-dots style2">
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper Navigation -->
+        <div class="wptb-swiper-navigation style3">                      
+            <div class="wptb-swiper-arrow swiper-button-prev"></div>
+            <div class="wptb-swiper-arrow swiper-button-next"></div>
+        </div>
+    </div>
+    
+</section>
+<!-- /////////////////////////////////// Our Store///////////////////////////////////////////////////////// -->
+
+    <section class=" store_bg  wptb-slider style5" >
+        <div>
+            <h1 class=" mt-5 wptb-item--title  wow animate__bounceInDown text-center">OUR STORES</h1>
+        </div>
+        <div class="swiper-container wptb-swiper-slider-five"id="our-store">    
+            <!-- swiper slides -->
+            <div class="swiper-wrapper">
+                <!-- Slide Item -->
+                <% Store_data.forEach(function(s_data){        %>       
+        
+                <div class="swiper-slide">
+                    <div class="wptb-slider--item">
+                        
+                        <div class=" store_img">
+                            <div class="  heading_style text-center d-flex">
+                                <h1 class="wptb-item--title ms-2"><%=s_data.Heading%></h1>
+                                <h3  class="mt-2 ms-2">[<%=s_data.title%>]</h3>
+                            </div>
+                            <a href="blog-details.html" class="wptb-item-link"><img src="<%=s_data.image%>"  alt="img"></a>
+                        </div>    
+                       
+                    </div>
+                </div>
+                <%})%>
+                <!-- End Slide Item -->
+    
+                <!-- Slide Item -->
+                
+               
+            </div>
+        </div>
+    
+        <!-- Swiper Navigation -->
+        <div class="wptb-swiper-navigation style2 d-none d-lg-flex">                      
+            <div class="wptb-swiper-arrow swiper-button-prev"></div>
+            <div class="wptb-swiper-arrow swiper-button-next"></div>
+        </div>
+    
+        <!-- Bottom Pane -->
+        <div class="wptb-bottom-pane justify-content-center d-lg-none">
+            <!-- pagination dots -->
+            <div class="wptb-swiper-dots style2">
+                <div class="swiper-pagination"></div>
+            </div>
+        
+            <!-- Swiper Navigation -->
+            <div class="wptb-swiper-navigation style3">                      
+                <div class="wptb-swiper-arrow swiper-button-prev"></div>
+                <div class="wptb-swiper-arrow swiper-button-next"></div>
+            </div>
+        </div>
+    
+    </section>
+ 
+
+</main>
+
+<%- include('../front/common/footer') %>

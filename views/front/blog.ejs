@@ -1,0 +1,28 @@
+<%- include('../front/common/header') %>
+<section>
+    
+</section>
+<div class="container"style="margin-top:10rem;">
+    <div class="row">
+        <% Blog_data.forEach(function(b_data){  %>
+        <div class="col-lg-4 col-sm-6">
+            <div class="wptb-blog-grid1 active highlight wow fadeInLeft">
+                <div class="wptb-item--inner">
+                    <div class="wptb-item--image">
+                        <a href="blog-details.html" class="wptb-item-link"><img src="/<%=b_data.image%>" alt="img"></a>
+                    </div>
+                    <div class="wptb-item--holder">
+                        <div class="wptb-item--date"><%=b_data.date%></div>
+                        <h4 class="wptb-item--title"><a href="blog-details.html"><%=b_data.heading%></a></h4>
+                        
+                        <div class="wptb-item--meta">
+                            <div class="wptb-item--author">By <a href="#"><%=b_data.by_blog%></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% }) %>
+        </div>
+</div>
+<%- include('../front/common/footer') %>

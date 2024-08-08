@@ -1,0 +1,76 @@
+<%- include('../../common/header') %>
+<div class="pc-container">
+          <div class="pc-content">
+            <!-- [ breadcrumb ] start -->
+            <div class="page-header">
+              <div class="page-block">
+                <div class="row align-items-center">
+                  <div class="col-md-12">
+                    <ul class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Update Blog</a></li>
+                      <li class="breadcrumb-item"><a href="javascript: void(0)">Update Blog</a></li>
+                      <li class="breadcrumb-item" aria-current="page">Update Blog</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="page-header-title">
+                      <h2 class="mb-0">Update Blog</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h4 class="mt-0 header-title">Update Blog Form</h4>
+            <hr style="margin-bottom: 50px;background-color: darkgrey;">
+            <div class="container mt-5">
+                    <form action="/auth/update_blog/<%=get_data._id%>" method="post" enctype="multipart/form-data">
+                        <div class="row mt-5">
+                            <div class="form-group col-md-6">
+                                <label for="name">Heading <span style="color:red;">*</span></label>
+                                <input type="text" class="form-control" id="name" name="heading"value="<%=get_data.heading%>" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="name"> Blog BY <span style="color:red;">*</span></label>
+                              <input type="text" class="form-control" id="name" name="by_blog"value="<%=get_data.by_blog%>" required>
+                          </div>
+
+                            </div>
+                            <div class="row mt-5">
+                                <div class="form-group col-md-6">
+                                    <label for="name">Descripation <span style="color:red;">*</span></label>
+                                    <input type="text" class="form-control" id="name" name="Descripation"value="<%=get_data.Descripation%>" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="name">Image <span style="color:red;">*</span></label>
+                                  <input type="file" class="form-control" id="name" name="image"value="<%=get_data.image%>" >
+                                  <img id="slide_img_path" height="100" width="100" src="<%= get_data.image %>">
+
+                              </div>
+                              <div class="row mt-5">
+                                <div class="form-group col-md-6">
+                                    <label for="show_home">Show Home <span style="color:red;">*</span></label><br>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="show_home" id="show_home_yes" value="1" <%= get_data.show_home == 1 ? 'checked' : '' %> required>
+                                        <label class="form-check-label" for="show_home_yes">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="show_home" id="show_home_no" value="2" <%= get_data.show_home != 1 ? 'checked' : '' %> required>
+                                        <label class="form-check-label" for="show_home_no">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+    
+                                </div>
+                            
+                
+                       
+                
+                        <div class="form-group ">
+                            <button type="submit" class="btn btn-primary" style="float: right;">Submit</button>
+                        </div>
+                    </form>
+                </div>
+          </div>
+        </div>
+        <%- include('../../common/footer')%>  
